@@ -105,7 +105,7 @@ class Doctor(ttk.Frame):
 
     def refresh(self):
         m = model(self.app)
-        issues = bib.diagnose(m.entries)
+        issues = sorted(bib.diagnose(m.entries), key=lambda i: ("error", "warning", "info").index(i.level))
         s = bib.summary(m.entries)
         count = lambda lvl: sum(1 for i in issues if i.level == lvl)
         for w in self.tiles.winfo_children():
