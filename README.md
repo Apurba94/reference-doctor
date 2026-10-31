@@ -15,6 +15,11 @@ article, the same paper twice under different keys. This program diagnoses them 
 
 `--demo` opens a temporary database with a deliberately messy sample file.
 
+## Download
+
+Windows: get the `.exe` from [Releases](https://github.com/Apurba94/reference-doctor/releases/latest) and double-click it. No installation or Python is needed.
+Windows may show a SmartScreen warning the first time because the program is not code-signed: choose *More info*, then *Run anyway*.
+
 ## From source
 
 ```bash
